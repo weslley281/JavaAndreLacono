@@ -43,5 +43,11 @@ public class Main {
         String precoS = "10";
         Integer precoI = Integer.parseInt(precoS);
         System.out.println(precoI);
+
+        System.out.println("__________________Math__________________");
+        var valor = Math.random() * 100;
+        System.out.println(Math.round(valor));
+        System.out.println("arredonda pra cima: " + Math.ceil(valor));
+        System.out.println("arredonda pra baixo: " + Math.floor(valor));
     }
 }
