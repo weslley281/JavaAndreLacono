@@ -27,6 +27,22 @@ public class Main {
         Boolean buy = valueProduct >= 10 && valueProduct <= 15;
         String buyFormatted = buy ? "Comprar" : "Não Comprar";
         System.out.println(buyFormatted);
-    }
 
+        System.out.println("__________________Operador OR__________________");
+        boolean hasJob = true;
+        boolean hascompany = true;
+        boolean has50K = true;
+        String canFinancy = hasJob || hascompany && has50K ? "Pode Financiar" : "Não pode Financiar";
+        System.out.println(canFinancy);
+
+        System.out.println("__________________If Else__________________");
+        Integer carValue = 100000;
+        if (carValue > 1000000) {
+            System.out.println("Não comprar, Acima da tabela");
+        } else if (carValue >= 90000 && carValue <= 100000) {
+            System.out.println("Comprar o carro");
+        }else {
+            System.out.println("Não comprar, Abaixo da tabela");
+        }
+    }
 }
